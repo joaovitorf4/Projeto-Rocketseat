@@ -26,6 +26,7 @@
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -34,7 +35,8 @@ body * {
 }
 
 #container {
-    width: 360px;
+    width: 90%;
+    max-width: 588px;
     margin: auto;
     margin: 56px auto 0px;
 }
@@ -162,4 +164,14 @@ footer {
 .light #switch button {
     right: 0;
     left: initial
+}
+
+@media (min-width: 1081px) {
+    :root {
+        --bg-url: url(imgs/Background_desk.png)
+    }
+
+    .light {
+        --bg-url: url(imgs/Background2_desk.png)
+    }
 }
